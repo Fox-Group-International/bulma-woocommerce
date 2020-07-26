@@ -1,0 +1,38 @@
+/**
+* Buttons
+*/
+
+a.button,
+button.button,
+input.button,
+#respond input#submit {
+  @extend .button;
+  @extend .button.is-link;
+
+  &.loading {
+    @extend .button.is-loading;
+  }
+
+  &.added::after {
+    content: "\e017";
+    margin-left: 0.53em;
+    vertical-align: bottom;
+  }
+
+  &.alt {
+    @extend .button.is-primary;
+  }
+
+  &:disabled,
+  &.disabled,
+  &:disabled[disabled] {
+    @extend .button.is-dark;
+    @extend .button.is-disabled !optional;
+  }
+}
+
+.button {
+  @include mobile {
+    width: 100%;
+  }
+}

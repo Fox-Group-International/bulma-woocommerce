@@ -1,0 +1,42 @@
+/**
+* Product loops
+*/
+
+ul {
+  &.products {
+    @extend .columns;
+    @extend .is-multiline;
+
+    li {
+      @extend .column;
+      @extend .is-one-quarter;
+
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  .button {
+    @extend .is-pulled-right;
+
+    margin-right: $size-6;
+
+    @include mobile {
+      margin: 10px 0 0 0;
+    }
+  }
+}
+
+span.woocommerce-Price-amount {
+  text-decoration: none;
+}
+
+.woocommerce-ordering {
+  @extend .select;
+  @extend .mb-3;
+}

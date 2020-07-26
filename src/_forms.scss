@@ -1,0 +1,7 @@
+/**
+ * Main WooCommerce styles
+ */
+input,
+.input-text {
+  @extend .input;
+}

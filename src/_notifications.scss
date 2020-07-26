@@ -1,0 +1,33 @@
+/**
+* Notifications
+*/
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+  @extend .notification;
+}
+
+.woocommerce-error {
+  @extend .is-danger;
+}
+
+.woocommerce-info {
+  @extend .is-info;
+
+  a {
+    text-decoration: underline;
+
+    &.hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.woocommerce-message {
+  @extend .is-info;
+  @extend .has-text-white;
+  @extend .is-flex;
+  @extend .mb-3;
+
+  flex-direction: column;
+}
