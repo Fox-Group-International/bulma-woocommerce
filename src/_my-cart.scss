@@ -1,4 +1,8 @@
 
+/**
+ * My cart WooCommerce styles
+ */
+
 .woocommerce-cart-form {
   @include mobile {
     table.my_account_orders {
@@ -61,24 +65,50 @@
         @extend .is-hidden-mobile;
       }
     }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+  button,
+  input {
+    @extend .mb-5, .mt-5;
   }
 
   .product-thumbnail a {
     @extend .image, .is-128x128;
   }
 
+  .actions {
+    @extend .has-text-right;
+  }
+
   .coupon {
-    float: left;
+    @include tablet {
+      float: left;
+    }
 
     label {
       @extend .is-hidden;
     }
 
     input {
+      @extend .mb-0;
+
       display: inline-block;
-      width: auto;
-      margin: 0;
+
+      @include tablet {
+        width: auto;
+        margin: 0;
+      }
     }
+  }
+}
+
+.woocommerce-message {
+  .button {
+    @extend .is-hidden;
   }
 }
 
@@ -102,4 +132,8 @@
 
 .product-quantity {
   @extend .is-1;
+}
+
+.product-price {
+  @extend .is-2;
 }

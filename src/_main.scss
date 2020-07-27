@@ -1,18 +1,21 @@
+/**
+ * Main WooCommerce styles
+ */
+
+.wrap {
+  &.container {
+    @extend .section;
+  }
+}
+
 .page-header {
   h1 {
-    @extend .title;
-    @extend .is-1;
-
-    text-align: center;
-
-    @include tablet {
-      text-align: left;
-    }
+    @extend .title, .is-1;
   }
 }
 
 .onsale {
-  @extend .has-background-info;
+  @extend .has-background-info, .has-text-centered;
 
   position: absolute;
   color: $white;
@@ -21,7 +24,6 @@
   width: $size-2;
   border-radius: $radius-rounded;
   font-size: $size-7;
-  text-align: center;
   line-height: $size-2;
   font-weight: $weight-bold;
   margin: $size-7;
@@ -55,7 +57,7 @@ input {
 }
 
 table {
-  @extend .table;
+  @extend .table, .is-striped;
 }
 
 .remove {

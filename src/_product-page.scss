@@ -1,0 +1,21 @@
+/**
+* Product page WooCommerce styles
+*/
+
+.single-product {
+  .product {
+    @extend .columns, .is-multiline;
+  }
+
+  .woocommerce-product-gallery {
+    @extend .column, .is-one-third;
+  }
+
+  .entry-summary {
+    @extend .column, .is-two-thirds;
+  }
+
+  .woocommerce-tabs {
+    @extend .column, .is-full;
+  }
+}

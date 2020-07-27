@@ -7,7 +7,7 @@ button.button,
 input.button,
 #respond input#submit {
   @extend .button;
-  @extend .button.is-link;
+  @extend .button.is-primary;
 
   &.loading {
     @extend .button.is-loading;
@@ -27,12 +27,6 @@ input.button,
   &.disabled,
   &:disabled[disabled] {
     @extend .button.is-dark;
-    @extend .button.is-disabled !optional;
-  }
-}
-
-.button {
-  @include mobile {
-    width: 100%;
+    @extend .button.disabled;
   }
 }

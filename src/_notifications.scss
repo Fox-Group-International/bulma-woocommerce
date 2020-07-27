@@ -1,6 +1,7 @@
 /**
-* Notifications
+* Notifications WooCommerce styles
 */
+
 .woocommerce-message,
 .woocommerce-error,
 .woocommerce-info {
@@ -24,10 +25,5 @@
 }
 
 .woocommerce-message {
-  @extend .is-info;
-  @extend .has-text-white;
-  @extend .is-flex;
-  @extend .mb-3;
-
-  flex-direction: column;
+  @extend .is-info, .has-text-white, .is-flex, .mb-3;
 }
