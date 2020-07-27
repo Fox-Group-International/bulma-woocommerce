@@ -8,14 +8,22 @@
   }
 }
 
+header {
+  @extend .mb-4;
+}
+
 .page-header {
   h1 {
     @extend .title, .is-1;
   }
+
+  h2 {
+    @extend .subtitle, .is-3;
+  }
 }
 
 .onsale {
-  @extend .has-background-info, .has-text-centered;
+  @extend .has-background-info, .has-text-centered, .mt-1, .ml-1;
 
   position: absolute;
   color: $white;
@@ -26,7 +34,7 @@
   font-size: $size-7;
   line-height: $size-2;
   font-weight: $weight-bold;
-  margin: $size-7;
+  z-index: 999;
 }
 
 span.price,
@@ -62,4 +70,8 @@ table {
 
 .remove {
   @extend .is-medium, .delete;
+}
+
+.active {
+  @extend .is-active;
 }
