@@ -3,6 +3,10 @@
 */
 
 .single-product {
+  h1.entry-title {
+    @extend .title, .is-1;
+  }
+
   .product {
     @extend .columns, .is-multiline;
 
@@ -172,5 +176,9 @@
     li.product {
       @extend .mx-0, .my-0;
     }
+  }
+
+  .panel {
+    box-shadow: none;
   }
 }
