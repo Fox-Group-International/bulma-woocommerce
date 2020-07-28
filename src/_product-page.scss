@@ -101,7 +101,7 @@
       }
 
       .quantity {
-        @extend .column, .pl-0, .is-1;
+        @extend .column, .pl-0, .is-2;
       }
 
       .product_meta {
@@ -123,7 +123,7 @@
     }
 
     ul {
-      @extend .ml-0, .is-toggle;
+      @extend .ml-0;
     }
 
     li,
@@ -163,7 +163,11 @@
   }
 
   .related.products {
-    @extend .mb-6;
+    @extend .mb-6, .mt-6;
+
+    h2 {
+      @extend .has-text-centered-mobile;
+    }
 
     li.product {
       @extend .mx-0, .my-0;

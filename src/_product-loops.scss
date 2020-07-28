@@ -40,3 +40,34 @@ span.woocommerce-Price-amount {
   @extend .select;
   @extend .mb-3;
 }
+
+//Pagination
+.woocommerce-pagination {
+  @extend .pagination, .is-centered;
+
+  .page-numbers {
+    @extend .pagination-list;
+
+    li {
+      @extend .is-inline;
+
+      margin: 2px;
+
+      span.current {
+        background-color: $pagination-current-background-color;
+        color: $pagination-current-color;
+        border-color: $pagination-current-border-color;
+      }
+    }
+
+    a,
+    span {
+      @extend .pagination-link;
+
+      &:link,
+      &:visited {
+        @extend .pagination-link;
+      }
+    }
+  }
+}
