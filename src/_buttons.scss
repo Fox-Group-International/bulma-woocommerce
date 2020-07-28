@@ -13,12 +13,6 @@ input.button,
     @extend .button.is-loading;
   }
 
-  &.added::after {
-    content: "\e017";
-    margin-left: 0.53em;
-    vertical-align: bottom;
-  }
-
   &.alt {
     @extend .button.is-primary;
   }

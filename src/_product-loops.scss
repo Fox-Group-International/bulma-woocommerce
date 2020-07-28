@@ -11,24 +11,20 @@ ul {
       @extend .column;
       @extend .is-one-quarter;
 
-      @include mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      img {
+        width: 100%;
       }
     }
   }
 
   .button {
-    @extend .is-pulled-right;
-
-    margin-right: $size-6;
-
-    @include mobile {
-      margin: 10px 0 0 0;
-    }
+    @extend .is-pulled-right, .my-4;
   }
 }
 
@@ -38,7 +34,23 @@ span.woocommerce-Price-amount {
 
 .woocommerce-ordering {
   @extend .select;
-  @extend .mb-3;
+  @extend .mb-6;
+
+  @include mobile {
+    width: 100%;
+
+    select {
+      width: 100%;
+    }
+  }
+}
+
+.woocommerce-result-count {
+  @extend .has-text-centered-mobile;
+
+  @include tablet {
+    float: right;
+  }
 }
 
 //Pagination
@@ -46,7 +58,7 @@ span.woocommerce-Price-amount {
   @extend .pagination, .is-centered;
 
   .page-numbers {
-    @extend .pagination-list;
+    @extend .pagination-list, .ml-0;
 
     li {
       @extend .is-inline;
