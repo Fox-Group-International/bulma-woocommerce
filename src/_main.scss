@@ -22,6 +22,14 @@ header {
   }
 }
 
+h3 {
+  @extend .is-size-4;
+}
+
+a.edit {
+  @extend .is-size-5;
+}
+
 .onsale {
   @extend .has-background-info, .has-text-centered, .mt-1, .ml-1;
 
@@ -60,16 +68,16 @@ p.stock {
   color: $red;
 }
 
-input {
-  @extend .input;
-}
-
 table {
   @extend .table, .is-striped;
 }
 
 .remove {
   @extend .is-medium, .delete;
+}
+
+.required {
+  @extend .is-danger;
 }
 
 .active {

@@ -1,0 +1,32 @@
+
+/**
+ * My account WooCommerce styles
+ */
+
+.woocommerce-MyAccount-navigation {
+  @extend .menu, .mb-5;
+
+  ul {
+    @extend .menu-list, .ml-0, .mt-0, .is-flex;
+
+    list-style: none;
+  }
+
+  li {
+    @extend .mt-0;
+
+    a {
+      color: $link;
+    }
+  }
+}
+
+.woocommerce-MyAccount-content {
+  .woocommerce-Button {
+    @extend .mt-5;
+  }
+}
+
+.woocommerce-address-fields__field-wrapper {
+  @extend .mb-5;
+}

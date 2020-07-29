@@ -104,8 +104,14 @@
         @extend .mb-3;
       }
 
+      p.price {
+        @extend .is-size-5;
+      }
+
       .quantity {
-        @extend .column, .pl-0, .is-2;
+        @extend .column, .pl-0;
+
+        width: 80px;
       }
 
       .product_meta {
@@ -169,8 +175,10 @@
   .related.products {
     @extend .mb-6, .mt-6;
 
+    width: 100%;
+
     h2 {
-      @extend .has-text-centered-mobile;
+      @extend .has-text-centered-mobile, .mb-5, .ml-2;
     }
 
     li.product {
