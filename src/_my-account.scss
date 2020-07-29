@@ -7,7 +7,7 @@
   @extend .menu, .mb-5;
 
   ul {
-    @extend .menu-list, .ml-0, .mt-0, .is-flex;
+    @extend .menu-list, .ml-0, .mt-0, .is-flex-desktop;
 
     list-style: none;
   }

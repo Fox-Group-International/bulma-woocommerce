@@ -21,6 +21,12 @@
     &.hover {
       text-decoration: none;
     }
+
+    &.showcoupon {
+      @extend .ml-2;
+
+      color: $white;
+    }
   }
 }
 
