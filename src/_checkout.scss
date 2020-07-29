@@ -1,7 +1,47 @@
+form.checkout.woocommerce-checkout {
+  @extend .columns;
+
+  h3:nth-child(2) {
+    @extend .ml-2;
+
+    position: absolute;
+    right: -0.5rem;
+    width: 50%;
+  }
+
+  .col2-set {
+    @extend .column;
+  }
+
+  .woocommerce-checkout-review-order {
+    @extend .column, .mt-6, .pt-4;
+  }
+}
+
 .woocommerce-billing-fields {
   @extend .mt-4;
 }
 
 .woocommerce-shipping-fields {
   @extend .mt-2;
+}
+
+.wc_payment_methods {
+  li {
+    label {
+      display: inline;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+.place-order {
+  button {
+    @extend .mt-4, .is-success;
+
+    width: 100%;
+  }
 }
