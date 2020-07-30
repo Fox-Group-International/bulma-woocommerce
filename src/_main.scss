@@ -12,14 +12,12 @@ header {
   @extend .mb-4;
 }
 
-.page-header {
-  h1 {
-    @extend .title, .is-1, .has-text-centered-mobile;
-  }
+h1 {
+  @extend .title, .is-size-1, .has-text-centered-mobile;
+}
 
-  h2 {
-    @extend .subtitle, .is-3, .has-text-centered-mobile;
-  }
+h2 {
+  @extend .subtitle, .is-size-3, .has-text-centered-mobile;
 }
 
 h3 {
@@ -68,8 +66,10 @@ p.stock {
   color: $red;
 }
 
-table {
-  @extend .table, .is-striped;
+.woocommerce {
+  table {
+    @extend .table, .is-striped;
+  }
 }
 
 .remove {
