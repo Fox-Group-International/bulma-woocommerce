@@ -190,3 +190,8 @@
     box-shadow: none;
   }
 }
+
+.woocommerce-grouped-product-list-item__label,
+.woocommerce-grouped-product-list-item__price {
+  line-height: 60px;
+}
