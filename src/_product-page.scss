@@ -111,7 +111,7 @@
       .quantity {
         @extend .column, .pl-0;
 
-        width: 80px;
+        width: 126px;
       }
 
       .product_meta {
@@ -194,4 +194,16 @@
 .woocommerce-grouped-product-list-item__label,
 .woocommerce-grouped-product-list-item__price {
   line-height: 60px;
+}
+
+.variations_form {
+  td.value {
+    @extend .select;
+
+    height: 3.5rem !important;
+
+    &::after {
+      border-color: $black !important;
+    }
+  }
 }
