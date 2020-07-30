@@ -2,11 +2,7 @@ form.checkout.woocommerce-checkout {
   @extend .columns;
 
   h3:nth-child(2) {
-    @extend .ml-2;
-
-    position: absolute;
-    right: -0.5rem;
-    width: 50%;
+    @extend .column;
   }
 
   .col2-set {
@@ -16,6 +12,14 @@ form.checkout.woocommerce-checkout {
   .woocommerce-checkout-review-order {
     @extend .column, .mt-6, .pt-4;
   }
+
+  .woocommerce-NoticeGroup-checkout {
+    @extend .column, .is-full;
+  }
+}
+
+.checkout.woocommerce-checkout {
+  @extend .is-multiline;
 }
 
 .woocommerce-billing-fields {
@@ -46,10 +50,6 @@ form.checkout.woocommerce-checkout {
   }
 }
 
-.page-checkout-page-data {
-  display: block !important;
-}
-
-.woocommerce-page.woocommerce-order-received.checkout-page {
+.woocommerce-order-received.checkout-page {
   display: block !important;
 }
