@@ -70,6 +70,10 @@ p.stock {
   table {
     @extend .table, .is-striped;
   }
+
+  ul {
+    list-style: none !important;
+  }
 }
 
 .remove {
@@ -86,8 +90,4 @@ p.stock {
 
 .woocommerce-shipping-methods {
   @extend .ml-0, .mt-0;
-}
-
-ul {
-  list-style: none !important;
 }

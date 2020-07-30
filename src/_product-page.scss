@@ -177,8 +177,8 @@
 
     width: 100%;
 
-    h2 {
-      @extend .has-text-centered-mobile, .mb-5, .ml-2;
+    h2:first-child {
+      @extend .has-text-centered-mobile, .mb-5, .ml-2, .title, .is-size-2;
     }
 
     li.product {

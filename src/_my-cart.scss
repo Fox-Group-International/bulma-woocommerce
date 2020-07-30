@@ -136,3 +136,11 @@
 .product-price {
   @extend .is-2;
 }
+
+#billing_address_1_field {
+  margin-bottom: $size-1;
+}
+
+.order-total {
+  @extend .title, .is-5;
+}
