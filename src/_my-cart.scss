@@ -140,3 +140,9 @@
 .order-total {
   @extend .title, .is-5;
 }
+
+.shipping-calculator-form {
+  p {
+    @extend .py-2;
+  }
+}
