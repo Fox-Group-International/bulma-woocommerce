@@ -2,12 +2,6 @@
  * Main WooCommerce styles
  */
 
-.wrap {
-  &.container {
-    @extend .section;
-  }
-}
-
 header {
   @extend .mb-4;
 }
