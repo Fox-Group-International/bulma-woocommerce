@@ -55,6 +55,10 @@ span.woocommerce-Price-amount {
   @include tablet {
     float: right;
   }
+
+  @include mobile {
+    margin-bottom: 10px;
+  }
 }
 
 //Pagination
