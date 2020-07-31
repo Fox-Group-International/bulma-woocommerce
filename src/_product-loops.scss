@@ -45,6 +45,10 @@ span.woocommerce-Price-amount {
   }
 }
 
+.products h2.woocommerce-loop-product__title {
+  @extend .is-size-4;
+}
+
 .woocommerce-result-count {
   @extend .has-text-centered-mobile;
 

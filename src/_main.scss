@@ -13,11 +13,11 @@ header {
 }
 
 h1 {
-  @extend .title, .is-size-1, .has-text-centered-mobile;
+  @extend .title, .is-size-1, .has-text-centered-mobile, .py-5;
 }
 
 h2 {
-  @extend .subtitle, .is-size-3, .has-text-centered-mobile;
+  @extend .subtitle, .is-size-3, .has-text-centered-mobile, .pt-3;
 }
 
 h3 {

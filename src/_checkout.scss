@@ -1,38 +1,8 @@
 form.checkout.woocommerce-checkout {
-  @extend .columns;
-
-  h3:nth-child(2),
-  h3:nth-child(3) {
-    @extend .ml-2;
-
-    position: absolute;
-    right: -0.5rem;
-    width: 50%;
-
-    @include mobile {
-      position: inherit;
-    }
-  }
-
-  h3:nth-child(3) {
-    top: 21%;
-  }
-
-  .col2-set {
-    @extend .column;
-  }
-
-  .woocommerce-checkout-review-order {
-    @extend .column, .mt-6, .pt-4;
-
-    @include mobile {
-      margin-top: 0 !important;
-      padding-top: 0 !important;
-    }
-  }
-
   .woocommerce-NoticeGroup-checkout {
-    @extend .column, .is-full;
+    .woocommerce-error {
+      flex-direction: column;
+    }
   }
 
   .select2-selection.select2-selection--single {
@@ -49,6 +19,10 @@ form.checkout.woocommerce-checkout {
 
   #shipping_postcode_field {
     @extend .mb-4;
+  }
+
+  h3 {
+    @extend .has-text-weight-semibold;
   }
 }
 
@@ -91,4 +65,55 @@ form.checkout.woocommerce-checkout {
 
 .woocommerce-order-received.checkout-page {
   display: block !important;
+}
+
+@include tablet {
+  form.checkout.woocommerce-checkout {
+    position: static !important;
+    display: block;
+  }
+}
+
+#customer_details {
+  width: 47%;
+  float: left;
+  margin-right: 3%;
+}
+
+#order_review_heading {
+  width: 47%;
+  float: right;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+#order_review {
+  @extend .mt-1;
+
+  width: 47%;
+  float: right;
+  margin-right: 0;
+}
+
+@include mobile {
+  #customer_details,
+  #order_review_heading,
+  #order_review {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+}
+
+.checkout-page {
+  footer {
+    clear: both;
+  }
+}
+
+.woocommerce-billing-fields__field-wrapper,
+.woocommerce-shipping-fields__field-wrapper {
+  .form-row {
+    @extend .my-4;
+  }
 }
