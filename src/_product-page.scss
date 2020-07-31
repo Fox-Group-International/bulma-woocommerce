@@ -96,6 +96,16 @@
     }
   }
 
+  .woocommerce-message {
+    a.button {
+      display: flex !important;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
   .summary {
     &.entry-summary {
       @extend .mt-6;
