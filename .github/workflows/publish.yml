@@ -5,8 +5,11 @@ name: Node.js Package deploy
 on:
   push:
     branches: [ master ]
+<<<<<<< HEAD
   pull_request:
     branches: [ master ]
+=======
+>>>>>>> master
 
 jobs:
   build:
