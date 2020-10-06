@@ -7,6 +7,8 @@ div.woocommerce {
   }
 
   .wc_payment_methods {
+    list-style: none !important;
+
     li {
       img {
         display: block;
